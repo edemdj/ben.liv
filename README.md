@@ -221,3 +221,84 @@ Dis-moi si tu veux ajouter ou modifier quelque chose ! 🚀
 │  
 │── /deploy                 # Configuration pour le déploiement (Docker, CI/CD, etc.)  
 │── README.md               # Documentation du projet  
+
+
+
+@@@@@@@
+
+📂 Structure des dossiers frontend
+📂 /frontend
+└── 📂 src
+    ├── 📂 components (Composants réutilisables)
+    ├── 📂 pages (Pages principales)
+    ├── 📂 services (Gestion des appels API)
+    ├── 📂 context (Gestion de l’état global avec React Context)
+    ├── 📂 assets (Images, icônes, fichiers statiques)
+    ├── 📂 styles (Feuilles de styles CSS ou SCSS)
+    ├── 📄 App.js (Structure principale de l’application)
+    ├── 📄 index.js (Point d’entrée de l’application React)
+
+📁 Détails de chaque dossier :
+
+📂 components/
+📍 Ce dossier contient tous les éléments réutilisables (boutons, cartes, en-têtes, etc.).
+➡️ Exemple de fichiers :
+
+📄 Navbar.js → Barre de navigation
+📄 Footer.js → Pied de page
+📄 RestaurantCard.js → Affichage d’un restaurant/magasin
+📄 ProductCard.js → Affichage d’un produit
+👉 Pourquoi ce dossier ?
+✅ Pour éviter de répéter du code en créant des composants réutilisables.
+
+📂 pages/
+📍 Contient toutes les pages principales de ton site.
+➡️ Exemple de fichiers :
+
+📄 Home.js → Page d’accueil
+📄 Login.js → Page de connexion
+📄 Register.js → Page d’inscription
+📄 Restaurants.js → Liste des restaurants/magasins
+📄 Orders.js → Page de suivi des commandes
+📄 Profile.js → Gestion du profil utilisateur
+👉 Pourquoi ce dossier ?
+✅ Pour bien organiser chaque vue de ton application.
+
+📂 services/
+📍 Contient toutes les fonctions pour appeler l’API.
+➡️ Exemple de fichiers :
+
+📄 authService.js → Connexion, inscription
+📄 restaurantService.js → Récupération des restaurants
+📄 orderService.js → Création et suivi des commandes
+📄 paymentService.js → Gestion des paiements
+👉 Pourquoi ce dossier ?
+✅ Pour centraliser les appels API et éviter de mettre les requêtes directement dans les composants.
+
+📂 context/
+📍 Contient les fichiers de gestion de l’état global avec React Context.
+➡️ Exemple de fichiers :
+
+📄 AuthContext.js → Gère l’authentification des utilisateurs
+📄 CartContext.js → Gère le panier des utilisateurs
+👉 Pourquoi ce dossier ?
+✅ Pour partager des données entre plusieurs composants sans avoir à les passer via props.
+
+📂 assets/
+📍 Contient toutes les ressources statiques (images, icônes, logos…).
+➡️ Exemple de fichiers :
+
+📂 /images/ → Pour stocker les images
+📄 logo.png → Logo de l’application
+👉 Pourquoi ce dossier ?
+✅ Pour bien organiser toutes les ressources graphiques.
+
+📂 styles/
+📍 Contient les fichiers CSS/SCSS.
+➡️ Exemple de fichiers :
+
+📄 global.css → Styles globaux
+📄 button.css → Styles des boutons
+👉 Pourquoi ce dossier ?
+✅ Pour séparer la logique du style et garder un code propre.
+
